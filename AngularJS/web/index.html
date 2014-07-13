@@ -21,15 +21,21 @@
 		 -->
 		{{understand}}
 		
+		<p>
+			The value of PI is {{getPi()}}
+		</p>
 		<!--Notice how we did not wrap "inputValue" in {{}} since it is being 
 		  used in a ng* tag
 		  
 		  by using the scope variable in a ng-model tag we have bound the input variable to the
 		  scope variable. This means when the input changes, the scope
 		  variable will update.
+		  
+		  Use ng-init to initialise the model with a default value.
+		  Although is is better done in the controller instead.
 		  -->
 		  
-		<input type="text" ng-model="inputValue" />
+		<input type="text" ng-init="inputValue='initial value'" ng-model="inputValue" />
 		{{inputValue}}
 		
 		
