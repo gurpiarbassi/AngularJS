@@ -11,6 +11,10 @@ app.controller("MainController", function($scope){
 	$scope.understand = "I now understand how the scope works!";
 	$scope.inputValue = "";
 	
+	//Scopes can be augmented with functions as follows:
+	$scope.getPi = function(){
+		return 3.141592654;
+	};
 	
 	
     $scope.selectedPerson = 0;
